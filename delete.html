@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your Zivo account</title>
+<meta name="description" content="Zivo is a focus timer made by an independent developer (Bilel, Tunisia). You can delete your Zivo account and everything tied to it, from inside the app or by email. This is permanent and cannot be undone.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;display=swap">
+<style>  :root{
+    --bg:#F7F1E8;--ink:#2A1F18;--sub:#5E4939;--brand:#9A2A0C;--accent:#E04A20;
+    --card:rgba(255,255,255,.7);--edge:rgba(255,255,255,.9);--line:rgba(42,31,24,.12);
+    --glow1:rgba(255,226,198,.95);--glow2:rgba(255,205,162,.5);--shadow:rgba(170,84,40,.28);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1D140F;--ink:#F6EADC;--sub:#D6C4B1;--brand:#FFA27A;--accent:#FF7F50;
+      --card:rgba(255,255,255,.07);--edge:rgba(255,255,255,.14);--line:rgba(255,255,255,.14);
+      --glow1:rgba(126,56,24,.42);--glow2:rgba(92,42,20,.5);--shadow:rgba(0,0,0,.6);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{
+    margin:0;background-color:var(--bg);color:var(--ink);
+    font:17px/1.6 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background-image:
+      radial-gradient(ellipse 120% 380px at 50% 0,var(--glow1),transparent 72%),
+      radial-gradient(ellipse 130% 620px at 50% 560px,var(--glow2),transparent 72%);
+    background-repeat:no-repeat;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:30px 18px 64px}
+  .top{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+  .icon{flex:none;width:60px;height:60px;border-radius:15px;box-shadow:0 14px 24px -12px var(--shadow)}
+  h1{font-size:30px;line-height:1.12;letter-spacing:-.03em;font-weight:800;margin:0}
+  .sub{color:var(--sub);font-weight:600;margin:0 0 20px}
+  .lead{margin:0 0 12px}
+  .card{
+    background:var(--card);border:1px solid var(--edge);border-radius:22px;
+    padding:18px 20px 16px;margin:16px 0;box-shadow:0 20px 30px -24px var(--shadow);
+    scroll-margin-top:16px;
+  }
+  h2{font-size:20px;line-height:1.25;letter-spacing:-.02em;font-weight:800;margin:0 0 10px;padding-left:19px;position:relative}
+  h2::before{
+    content:"";position:absolute;left:0;top:.42em;width:9px;height:9px;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%,#FFC39A,#F0502A);box-shadow:0 1px 4px rgba(240,80,42,.5);
+  }
+  p{margin:0 0 10px}
+  ul,ol{margin:0 0 10px;padding-left:22px}
+  li{margin:0 0 7px;padding-left:2px}
+  li::marker{color:var(--accent);font-weight:800}
+  .card > :last-child{margin-bottom:0}
+  .card > :last-child > li:last-child{margin-bottom:0}
+  strong{font-weight:700}
+  a{color:var(--brand);font-weight:700;text-underline-offset:2px;overflow-wrap:anywhere}
+  footer{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);color:var(--sub);font-size:15px}
+  footer p{margin:0 0 6px}
+  footer a{white-space:nowrap}
+  @media (max-width:420px){
+    body{font-size:16px}
+    h1{font-size:25px}
+    h2{font-size:18.5px}
+    .icon{width:52px;height:52px;border-radius:13px}
+    .card{padding:16px 16px 14px;border-radius:20px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<main>
+  <div class="top">
+    <img class="icon" src="icon.png" width="60" height="60" alt="The Zivo app icon">
+    <h1>Delete your Zivo account</h1>
+  </div>
+  <p class="sub">How to remove your account and all data tied to it.</p>
+  <p class="lead">Zivo is a focus timer made by an independent developer (Bilel, Tunisia). You can delete your Zivo account and everything tied to it, from inside the app or by email. This is permanent and cannot be undone.</p>
+
+  <section class="card" id="app">
+    <h2>In the app (fastest)</h2>
+    <ol>
+      <li>Open <strong>Zivo</strong>.</li>
+      <li>Open <strong>Settings</strong> and tap <strong>Account</strong>.</li>
+      <li>Tap <strong>Delete account</strong>, under Log out.</li>
+      <li>Press and hold <strong>Delete for good</strong>.</li>
+    </ol>
+    <p>Your cloud save and your Zivo login are deleted right away, and the phone starts again as a new guest.</p>
+    <p>Google may ask you to sign in once more first, to make sure it is you.</p>
+  </section>
+
+  <section class="card" id="mail">
+    <h2>By email</h2>
+    <p>If you cannot open the app, write to <a href="mailto:lightaura625@gmail.com?subject=Delete%20my%20Zivo%20account">lightaura625@gmail.com</a> from the email address of your Google account, with the subject “Delete my Zivo account”. Your account and your save are deleted within 30 days, and we confirm by reply.</p>
+    <p>We cannot reach your phone. Remove the app, or your phone may keep its own copy of your progress.</p>
+  </section>
+
+  <section class="card" id="deleted">
+    <h2>What is deleted</h2>
+    <ul>
+      <li><strong>Your Zivo login:</strong> the email address, name, picture link and ids that Firebase Authentication keeps for Zivo.</li>
+      <li><strong>Your cloud save:</strong> your focus minutes and level, gems, streaks, focused days, buddies, badges and the name on your player card.</li>
+      <li><strong>On your phone</strong>, when you delete in the app: your progress, your account details and the picture you picked.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="kept">
+    <h2>What is kept</h2>
+    <p>Nothing on our side. Zivo keeps no copy of a deleted account. Google says it clears its own backup copies within 180 days.</p>
+    <p>If Zivo is also on another phone with the same account, remove the app there too. That phone may still hold its own copy of your progress.</p>
+  </section>
+
+  <section class="card" id="google">
+    <h2>What is not touched</h2>
+    <p>Your Google account itself is not touched.</p>
+    <p>Zivo may still be listed in your Google Account under third-party apps. You can remove it there.</p>
+    <p>There is nothing to cancel first: Zivo has no subscriptions and nothing to buy.</p>
+  </section>
+
+  <section class="card" id="guest">
+    <h2>If you never signed in</h2>
+    <p>A guest has no account, and nothing is kept outside the phone. To remove a guest’s data, remove the app.</p>
+    <p>If you once started to sign in and it did not finish, a Zivo login with your email address may already exist. To remove it, sign in again and delete the account, or write to us.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Contact: <a href="mailto:lightaura625@gmail.com">lightaura625@gmail.com</a></p>
+  <p><a href="index.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="delete.html">Delete your account</a></p>
+  <p>Zivo · independent developer · Tunisia</p>
+</footer>
+</div>
+</body>
+</html>
