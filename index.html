@@ -73,7 +73,7 @@
     <img class="icon" src="icon.png" width="60" height="60" alt="The Zivo app icon">
     <h1>Zivo — Privacy Policy</h1>
   </div>
-  <p class="sub">Last updated: 17 November 2026</p>
+  <p class="sub">Last updated: 18 November 2026</p>
   <p class="lead">Zivo is a focus timer that rewards you while you focus. It is made by an independent developer (Bilel, Tunisia). This policy explains what the app keeps, where it is kept, and how you stay in control.</p>
   <p class="lead">Questions? Write to <a href="mailto:lightaura625@gmail.com">lightaura625@gmail.com</a>.</p>
 
@@ -146,6 +146,7 @@
       <li>To back up your progress and bring it back when you sign in on another phone.</li>
       <li>To show your name and picture on your player card.</li>
       <li>To keep saves honest: the server refuses a save with impossible numbers.</li>
+      <li>To check that requests come from the real Zivo app (the security check below).</li>
     </ul>
     <p>It is used for nothing else.</p>
   </section>
@@ -159,6 +160,24 @@
     </ul>
     <p>When the app talks to Google’s servers, they see your phone’s internet address (IP address) and basic technical details, like every internet service does. Google says it keeps sign-in IP addresses for a few weeks, for security.</p>
     <p>Google’s own sign-in box follows Google’s privacy policy.</p>
+  </section>
+
+  <section class="card" id="check">
+    <h2>The security check (App Check)</h2>
+    <p>Whenever Zivo talks to Firebase (for example to sign you in, back up your progress or delete your account), it sends along a pass from Google. The pass shows that the request comes from the real, unchanged Zivo app (the version Google Play gives out). This uses Google’s Firebase App Check and Google Play Integrity. It lets Zivo shut changed copies of the app and scripts out of your cloud save.</p>
+    <p>For the check, your phone sends Google Play:</p>
+    <ul>
+      <li>The app’s name, version and signing certificate.</li>
+      <li>Whether the Google accounts on the phone got the app from Google Play (its licence status).</li>
+      <li>Device integrity information made by Google Play services, including a key attestation certificate and a device attestation token.</li>
+    </ul>
+    <p>Firebase then gets the result, with the same basic technical details as every request. For example: the Android version, the phone model and brand, the store the app came from, the app’s ids and the days the app was recently used.</p>
+    <ul>
+      <li>It never includes your progress, your name or your email address.</li>
+      <li>It runs when Zivo talks to Firebase and the last pass has run out (a pass lasts about an hour). While you are signed in and Zivo is open, Firebase also renews your sign-in by itself about once an hour, and the check can run then too. If you only play as a guest, it never runs.</li>
+      <li>It is a security check, not tracking. Google’s rules for Play Integrity forbid using it to track people or phones.</li>
+      <li>Firebase App Check keeps none of the check data, and each pass expires after about an hour. Google Play handles its part under the Google Play Terms of Service: the data is encrypted, not given to anyone else, and deleted after a fixed time.</li>
+    </ul>
   </section>
 
   <section class="card" id="keep">
